@@ -51,21 +51,6 @@ header {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    position: relative;
-    text-decoration: none;
-}
-.header_container--nav a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    width: 0;
-    height: 2px;
-    background: white;
-    transition: width 0.3s ease;
-}
-.header_container--nav a:hover::after {
-    width: 100%;
 }
 .header_container--nav--portfolio {
     font-family: Roboto;
@@ -76,12 +61,16 @@ header {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    text-decoration: none;
-    color:#2196F3;
+    color: #2196F3;
+    text-decoration: underline;
+    text-underline-offset: 30px;
+    text-decoration-thickness: 4px;
+    border-radius: 4px;
 }
 
 .header_container--nav--link {
     color: #212121;
+    text-decoration: none;
 }
 
 .header_container--nav a:hover {
